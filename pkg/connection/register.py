@@ -138,7 +138,7 @@ class FudanConnection:
         print("📅今日日期是, ", today)
         
         if today == old_info["d"]["info"]["date"]:
-            self.send_wechat(old_info["d"]["oldInfo"]["area"])
+            self.send_wechat(old_info["d"]["info"]["area"])
             return True
         else:
             print("😔还没提交, 继续提交吧")
